@@ -1,5 +1,15 @@
 /Progregss-natives
 /local
+/ldlib
+/logs
+/natives-windows-x86_64
+/patchouli_books
+/resourcepacks
+/saves
+/screenshots
+/versions
+hmclversion.cfg
+log4j2.xml
 usernamecache.json
 usercache.json
 rhino.local.properties
