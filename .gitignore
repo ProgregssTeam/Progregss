@@ -8,6 +8,7 @@
 /saves
 /screenshots
 /versions
+/PCL
 hmclversion.cfg
 log4j2.xml
 usernamecache.json
