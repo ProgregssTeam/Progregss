@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "progregss"
+	group: ""
+	id: "542BF2FA5C9CAE77"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "207B3AC75D3EBA74"
+		tasks: [{
+			id: "38CC3BF6E8E53270"
+			title: "Have fun!"
+			type: "checkmark"
+		}]
+		title: "享受一场格雷盛宴"
+		x: 0.0d
+		y: -0.5d
+	}]
+	title: "欢迎来到Progregss!"
+}

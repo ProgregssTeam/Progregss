@@ -65,6 +65,7 @@
   "gtceu:controllable_provider": null,
   "gtceu:recipe_logic_provider": null,
   "shetiphiancore:hud": null,
+  "pipez:pipe": null,
   "shetiphiancore:hud": null,
   "endertanks:hud": null,
   "gtceu:electric_container_provider": null,
@@ -130,5 +131,6 @@
   "mekanism:entity_data_provider": null,
   "mekanism:tooltip_renderer": null,
   "mekanism:remove_builtin": null,
+  "pipez:pipe": null,
   "enderchests:hud": null
 }
