@@ -15,6 +15,7 @@
 /XaeroWaypoints*
 /modernfix
 /shaderpacks
+/crash-reports
 hmclversion.cfg
 log4j2.xml
 usernamecache.json
