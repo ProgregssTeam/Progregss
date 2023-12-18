@@ -1,7 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "567CD49F05F3C07F", title: "存储与自动化" }
-		{ id: "74AC410CCFEAC495", title: "科技" }
-		{ id: "64215C8B6F4CA30D", title: "格雷科技" }
-	]
+	chapter_groups: [ ]
 }
