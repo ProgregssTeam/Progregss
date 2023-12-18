@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('mekanism:basic_control_circuit')
         .EUt(120)
         .duration(300)
+
     event.recipes.gtceu.forming_press('mekanism:circuits/advanced')
         .itemInputs('#forge:circuits/hv', '2x mekanism:alloy_infused')
         .itemOutputs('mekanism:advanced_control_circuit')
