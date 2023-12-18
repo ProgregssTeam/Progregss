@@ -2,9 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "44DB366084F6FA51"
-	group: "64215C8B6F4CA30D"
+	group: ""
 	id: "44DB366084F6FA51"
-	order_index: 3
+	order_index: 6
 	quest_links: [ ]
 	quests: [ ]
 	title: "高压时代"
