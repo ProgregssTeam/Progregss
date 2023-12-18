@@ -54,6 +54,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "tombstone": {
+    "graves": true
+  },
   "endertanks": {
     "hud.basic": true,
     "hud": true,

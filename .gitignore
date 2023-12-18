@@ -10,6 +10,10 @@
 /screenshots
 /versions
 /PCL
+/XaeroWaypoints
+/XaeroWaypoints*
+/modernfix
+/shaderpacks
 hmclversion.cfg
 log4j2.xml
 usernamecache.json
@@ -21,3 +25,4 @@ patchouli_data.json
 ${quickPlayPath}
 options.txt
 servers.dat
+*.log

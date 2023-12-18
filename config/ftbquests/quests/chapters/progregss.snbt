@@ -3,11 +3,17 @@
 	default_quest_shape: ""
 	filename: "progregss"
 	group: ""
+	icon: "gtceu:chocolate_coin"
 	id: "542BF2FA5C9CAE77"
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
 		id: "207B3AC75D3EBA74"
+		rewards: [{
+			id: "416144098037FB14"
+			item: "ftbquests:book"
+			type: "item"
+		}]
 		tasks: [{
 			id: "38CC3BF6E8E53270"
 			title: "Have fun!"
@@ -15,7 +21,7 @@
 		}]
 		title: "享受一场格雷盛宴"
 		x: 0.0d
-		y: -0.5d
+		y: 0.0d
 	}]
 	title: "欢迎来到Progregss!"
 }
