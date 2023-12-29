@@ -19,9 +19,9 @@
 			title: "Have fun!"
 			type: "checkmark"
 		}]
-		title: "享受一场格雷盛宴"
+		title: "{start.prog.welcome.title}"
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "欢迎来到Progregss!"
+	title: "{start.prog.chapter.title}"
 }
