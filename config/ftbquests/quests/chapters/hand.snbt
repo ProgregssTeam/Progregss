@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hand"
+	group: ""
+	id: "0E8E61B9938E2C30"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "04F78DE385B76142"
+			tasks: [{
+				id: "2E91C01B22B87C64"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "{hand.prog.chapter.title}"
+}

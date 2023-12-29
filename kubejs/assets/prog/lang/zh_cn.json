@@ -1,0 +1,20 @@
+{
+    "start.prog.chapter.title": "初始游戏",
+    "start.prog.welcome.title": "欢迎来到Progregss",
+    "hand.prog.chapter.title": "第0章 手工时代",
+    "hand.prog.log.title": "你知道现在要做什么的对吧",
+    "hand.prog.log.description": "要致富，先撸（）！",
+    "create.prog.chapter.title": "第1章 机械时代",
+    "steam.prog.chapter.title": "第2章 蒸汽时代",
+    "lv.prog.chapter.title": "第3章 低压时代",
+    "lv.prog.hull.title": "LV机器外壳",
+    "lv.prog.hull.description": "你需要&5绝&d对&4天&6马&e行&a空&b的&3想&9象&1能&5力&r来使用它",
+    "mv.prog.chapter.title": "第4章 中压时代",
+    "hv.prog.chapter.title": "第5章 高压时代",
+    "ev.prog.chapter.title": "第6章 超高压时代",
+    "iv.prog.chapter.title": "第7章 强导压时代",
+    "luv.prog.chapter.title": "第8章 剧差压时代",
+    "zpm.prog.chapter.title": "第9章 零点压时代",
+    "uv.prog.chapter.title": "第10章 极限压时代",
+    "creative.prog.chapter.title": "第11章 创造时代"
+}
