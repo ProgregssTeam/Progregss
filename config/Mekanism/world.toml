@@ -10,12 +10,12 @@
 	#Generation Settings for tin ore.
 	[world_generation.tin]
 		#Determines if tin ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#small tin vein Generation Settings.
 		[world_generation.tin.small]
 			#Determines if small tin veins should be added to world generation. Note: Requires generating tin ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that small tin veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 14
@@ -97,12 +97,12 @@
 	#Generation Settings for osmium ore.
 	[world_generation.osmium]
 		#Determines if osmium ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#upper osmium vein Generation Settings.
 		[world_generation.osmium.upper]
 			#Determines if upper osmium veins should be added to world generation. Note: Requires generating osmium ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that upper osmium veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 65
@@ -225,12 +225,12 @@
 	#Generation Settings for uranium ore.
 	[world_generation.uranium]
 		#Determines if uranium ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#small uranium vein Generation Settings.
 		[world_generation.uranium.small]
 			#Determines if small uranium veins should be added to world generation. Note: Requires generating uranium ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that small uranium veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 4
@@ -312,12 +312,12 @@
 	#Generation Settings for fluorite ore.
 	[world_generation.fluorite]
 		#Determines if fluorite ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#normal fluorite vein Generation Settings.
 		[world_generation.fluorite.normal]
 			#Determines if normal fluorite veins should be added to world generation. Note: Requires generating fluorite ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that normal fluorite veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 5
@@ -399,12 +399,12 @@
 	#Generation Settings for lead ore.
 	[world_generation.lead]
 		#Determines if lead ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#normal lead vein Generation Settings.
 		[world_generation.lead.normal]
 			#Determines if normal lead veins should be added to world generation. Note: Requires generating lead ore to be enabled.
-			shouldGenerate = true
+			shouldGenerate = false
 			#Chance that normal lead veins generates in a chunk.
 			#Range: 1 ~ 256
 			perChunk = 8
@@ -445,7 +445,7 @@
 	#Generation Settings for salt.
 	[world_generation.salt]
 		#Determines if salt should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Chance that salt generates in a chunk.
 		#Range: 1 ~ 256
 		perChunk = 2
