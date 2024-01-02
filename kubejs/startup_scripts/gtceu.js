@@ -7,6 +7,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPRESSOR);
 
+    /*
     event.create('test_generator')
         .category('progregss')
         .setEUIO('out')
@@ -14,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.DARK_CANISTER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
+        */
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -23,9 +25,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tankScalingFunction(tier => tier * 4800)
         .workableTieredHullRenderer(GTCEu.id("block/machines/test_machine"));
 
+    /*
     event.create('test_generator', 'generator',
         GTValues.LV, GTValues.MV, GTValues.HV)
         .recipeType("test_generator", true, true)
         .tankScalingFunction(tier => tier * 4800)
     //.workableTieredHullRenderer(GTCEu.id("block/machines/test_machine"));
+    */
 });

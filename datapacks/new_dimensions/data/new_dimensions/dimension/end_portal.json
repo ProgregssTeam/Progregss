@@ -1,0 +1,20 @@
+{
+    "type": "new_dimensions:end_portal",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "layers": [
+                {
+                    "height": 1,
+                    "block": "minecraft:end_portal"
+                },
+                {
+                    "height": 1,
+                    "block": "minecraft:bamboo_trapdoor"
+                }
+            ],
+            "biome": "minecraft:void",
+            "structure_overrides": []
+        }
+    }
+}
