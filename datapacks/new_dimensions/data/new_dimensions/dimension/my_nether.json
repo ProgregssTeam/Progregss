@@ -1,0 +1,11 @@
+{
+    "type": "new_dimensions:my_nether",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "new_dimensions:my_nether",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "preset": "minecraft:nether"
+        }
+    }
+}

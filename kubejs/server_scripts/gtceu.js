@@ -36,8 +36,8 @@ ServerEvents.recipes(event => {
         .EUt(24)
         .rpm(8);
 
-    event.recipes.gtceu.test_generator('gtceu:test_gen')
-        .inputFluids(Fluid.of("minecraft:water", 1000))
-        .duration(100)
-        .EUt(-24);
+    /*    event.recipes.gtceu.test_generator('gtceu:test_gen')
+            .inputFluids(Fluid.of("minecraft:water", 1000))
+            .duration(100)
+            .EUt(-24);*/
 });
