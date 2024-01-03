@@ -1,6 +1,6 @@
 {
   // Should players be able to create their own team? [default: false]
-  "createOwnTeam": false,
+  "createOwnTeam": true,
   
   // Force the check if the world is skyblock
   // This enables the commands in worlds without any skyblock dimension
@@ -28,13 +28,13 @@
     "crossDimensionTeleportation": true,
     
     // Should players be able to teleport to their home island? [default: true]
-    "home": true,
+    "home": false,
     
     // Cooldown in ticks for teleporting back home. [default: 3600 = 3min]
     "homeCooldown": 3600,
     
     // Should players be able to teleport to spawn? [default: true]
-    "spawn": true,
+    "spawn": false,
     
     // Cooldown in ticks for teleporting to spawn. [default: 3600 = 3min]
     "spawnCooldown": 3600,

@@ -9,11 +9,6 @@
 	quest_links: [ ]
 	quests: [{
 		id: "207B3AC75D3EBA74"
-		rewards: [{
-			id: "416144098037FB14"
-			item: "ftbquests:book"
-			type: "item"
-		}]
 		tasks: [{
 			id: "38CC3BF6E8E53270"
 			title: "Have fun!"
