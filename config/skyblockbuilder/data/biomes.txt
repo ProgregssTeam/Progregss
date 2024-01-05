@@ -40,7 +40,6 @@ minecraft:grove
 twilightforest:highlands
 minecraft:ice_spikes
 ad_astra:infernal_venus_barrens
-gcyr:infernal_venus_barrens
 minecraft:jagged_peaks
 minecraft:jungle
 twilightforest:lake
@@ -49,16 +48,11 @@ ad_astra:lunar_wastelands
 minecraft:lush_caves
 minecraft:mangrove_swamp
 ad_astra:martian_canyon_creek
-gcyr:martian_canyon_creek
 ad_astra:martian_polar_caps
-gcyr:martian_polar_caps
 ad_astra:martian_wastelands
-gcyr:martian_wastelands
 minecraft:meadow
 integrateddynamics:meneglin
 ad_astra:mercury_deltas
-gcyr:mercury_deltas
-gcyr:moon
 minecraft:mushroom_fields
 twilightforest:mushroom_forest
 minecraft:nether_wastes
@@ -79,7 +73,6 @@ minecraft:snowy_plains
 minecraft:snowy_slopes
 minecraft:snowy_taiga
 minecraft:soul_sand_valley
-gcyr:space
 minecraft:sparse_jungle
 ae2:spatial_storage
 twilightforest:spooky_forest
@@ -95,7 +88,6 @@ minecraft:the_void
 twilightforest:thornlands
 twilightforest:underground
 ad_astra:venus_wastelands
-gcyr:venus_wastelands
 minecraft:warm_ocean
 minecraft:warped_forest
 minecraft:windswept_forest
