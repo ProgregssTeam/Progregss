@@ -16,10 +16,13 @@
 /shaderpacks
 /crash-reports
 /schematics
+/skyblockbuilder
+/config/jei/world
 hmclversion.cfg
 log4j2.xml
 usernamecache.json
 usercache.json
+TrashSlotSaveState.json
 rhino.local.properties
 Progregss.json
 Progregss.jar
