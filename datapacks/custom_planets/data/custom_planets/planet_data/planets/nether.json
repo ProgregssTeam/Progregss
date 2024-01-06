@@ -2,7 +2,7 @@
     "translation": "gui.custom_planets.text.nether",
     "galaxy": "ad_astra:milky_way",
     "solar_system": "ad_astra:solar_system",
-    "world": "new_dimensions:my_nether",
+    "world": "minecraft:the_nether",
     "orbit_world": "ad_astra:earth_orbit",
     "rocket_tier": 1,
     "gravity": 9.806,

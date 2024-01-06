@@ -1,5 +1,5 @@
 {
-    "type": "new_dimensions:my_nether",
+    "type": "minecraft:the_nether",
     "generator": {
         "type": "minecraft:noise",
         "settings": "new_dimensions:my_nether",
