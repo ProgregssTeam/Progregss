@@ -1,11 +1,11 @@
 {
     "tagprefix.moon": "月球%s矿石",
-    "block.gtceu.lv_test_machine": "基础测试机器",
-    "block.gtceu.mv_test_machine": "§b进阶测试机器§r",
-    "block.gtceu.hv_test_machine": "§6进阶测试机器 II§r",
-    "block.gtceu.ev_test_machine": "§5进阶测试机器 III§r",
-    "block.gtceu.iv_test_machine": "§1精英测试机器 §r",
-    "block.gtceu.luv_test_machine": "§d精英测试机器 II§r",
-    "block.gtceu.zpm_test_machine": "§c精英测试机器 III§r",
-    "block.gtceu.uv_test_machine": "§3终极测试机器 §r"
+    "block.gtceu.lv_inscriber": "基础压印器",
+    "block.gtceu.mv_inscriber": "§b进阶压印器§r",
+    "block.gtceu.hv_inscriber": "§6进阶压印器 II§r",
+    "block.gtceu.ev_inscriber": "§5进阶压印器 III§r",
+    "block.gtceu.iv_inscriber": "§1精英压印器§r",
+    "block.gtceu.luv_inscriber": "§d精英压印器 II§r",
+    "block.gtceu.zpm_inscriber": "§c精英压印器 III§r",
+    "block.gtceu.uv_inscriber": "§3终极压印器§r"
 }

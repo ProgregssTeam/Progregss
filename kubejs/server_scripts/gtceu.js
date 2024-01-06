@@ -1,24 +1,43 @@
 ServerEvents.recipes(event => {
-    event.replaceInput({ mod: 'gtceu' }, '#forge:ingots/osmium', 'gtceu:osmium_ingot');
-    event.replaceInput({ mod: 'gtceu' }, '#forge:storage_blocks/osmium', 'gtceu:osmium_block');
-    event.replaceInput({ mod: 'gtceu' }, '#forge:nuggets/osmium', 'gtceu:osmium_nugget');
-    event.replaceInput({ mod: 'gtceu' }, '#forge:dusts/osmium', 'gtceu:osmium_dust');
+    function set_to_gt_metal(metal, vanilla) {
+        if (!vanilla) {
+            event.replaceInput({}, "#forge:ingots/" + metal, "gtceu:" + metal + "_ingot");
+            event.replaceInput({}, "#forge:storage_blocks/" + metal, "gtceu:" + metal + "_block");
+            event.replaceInput({}, "#forge:nuggets/" + metal, "gtceu:" + metal + "_nugget");
+            event.remove({ output: "mekanism:ingot_" + metal })
+            event.remove({ output: "mekanism:block_" + metal })
+            event.remove({ output: "mekanism:nugget_" + metal })
+        }
+        event.replaceInput({}, "#forge:dusts/" + metal, "gtceu:" + metal + "_dust");
+        event.replaceInput({}, "mekanism:dust_" + metal, "gtceu:" + metal + "_dust");
+        event.remove({ output: "mekanism:dust_" + metal })
+
+        event.replaceInput({}, "#forge:plates/" + metal, "gtceu:" + metal + "_plate");
+    }
+    const vanilla_metals = [
+        "copper"
+    ];
+    const no_vanilla_metals = [
+        "tin",
+        "osmium"
+    ];
+    vanilla_metals.forEach(metal => set_to_gt_metal(metal, true));
+    no_vanilla_metals.forEach(metal => set_to_gt_metal(metal, false));
 
     event.remove({ id: 'gtceu:shapeless/dust_bronze' });
     event.recipes.createMixing('4x gtceu:bronze_ingot',
         ['3x #forge:ingots/copper', '#forge:ingots/tin']).heated();
 
     event.remove({ id: 'create:crafting/materials/electron_tube' });
-    event.shaped(Item.of('create:electron_tube', 1), [
-        ' A ',
-        'BCB',
-        ' B '
-    ],
+    event.shaped(
+        "create:electron_tube",
+        [" A ", "BCB", " B "],
         {
             A: 'create:polished_rose_quartz',
             B: 'minecraft:glass',
             C: '#forge:plates/steel'
-        });
+        }
+    );
 
     event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' });
     event.recipes.createSequencedAssembly(['gtceu:basic_electronic_circuit'],
@@ -28,11 +47,4 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:resistor']),
         event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:red_alloy_single_cable'])
     ]).transitionalItem('gtceu:resin_printed_circuit_board').loops(2);
-
-    event.recipes.gtceu.test_machine('gtceu:test')
-        .itemInputs('minecraft:dirt')
-        .itemOutputs('minecraft:diamond')
-        .duration(100)
-        .EUt(24)
-        .rpm(8);
 });

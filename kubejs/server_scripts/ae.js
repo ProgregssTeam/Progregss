@@ -3,8 +3,11 @@ ServerEvents.recipes(event => {
         event.remove({ output: name });
     }
     const remove_items = [
-        "ae2:inscriber",
         "expatternprovider:ex_inscriber",
+        "ae2:logic_processor_press",
+        "ae2:calculation_processor_press",
+        "ae2:engineering_processor_press",
+        "ae2:silicon_press",
         "ae2:printed_logic_processor",
         "ae2:printed_calculation_processor",
         "ae2:printed_engineering_processor",
@@ -22,14 +25,14 @@ ServerEvents.recipes(event => {
             .itemOutputs("ae2:" + name + "_press")
             .EUt(120)
             .duration(1600);
-        event.recipes.gtceu.laser_engraver("gtceu:" + name + "_print")
-            .itemInputs("#forge:plates/" + ingredient)
+        event.recipes.gtceu.inscriber("gtceu:" + name + "_print")
+            .itemInputs("gtceu:" + ingredient + "_plate")
             .notConsumable("ae2:" + name + "_press")
             .itemOutputs("ae2:printed_" + name)
             .EUt(120)
             .duration(200);
         if (circuit) {
-            event.recipes.gtceu.circuit_assembler("gtceu:" + name)
+            event.recipes.gtceu.inscriber("gtceu:" + name)
                 .itemInputs("ae2:printed_" + name, 'ae2:printed_silicon', '#forge:circuits/hv')
                 .inputFluids(Fluid.of('gtceu:tin', 288))
                 .itemOutputs("ae2:" + name)
