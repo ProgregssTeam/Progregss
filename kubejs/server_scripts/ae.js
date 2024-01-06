@@ -1,72 +1,44 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: 'ae2:inscriber' })
-    event.remove({ output: 'expatternprovider:ex_inscriber' })
-    event.remove({ output: 'ae2:printed_logic_processor' })
-    event.remove({ output: 'ae2:printed_calculation_processor' })
-    event.remove({ output: 'ae2:printed_engineering_processor' })
-    event.remove({ output: 'ae2:printed_silicon' })
-    event.remove({ output: 'ae2:logic_processor' })
-    event.remove({ output: 'ae2:calculation_processor' })
-    event.remove({ output: 'ae2:engineering_processor' })
+    function remove_recipe(name) {
+        event.remove({ output: name });
+    }
+    const remove_items = [
+        "ae2:inscriber",
+        "expatternprovider:ex_inscriber",
+        "ae2:printed_logic_processor",
+        "ae2:printed_calculation_processor",
+        "ae2:printed_engineering_processor",
+        "ae2:printed_silicon",
+        "ae2:logic_processor",
+        "ae2:calculation_processor",
+        "ae2:engineering_processor"
+    ];
+    remove_items.forEach(remove_recipe);
 
-    event.recipes.gtceu.laser_engraver('gtceu:logic_processor_print')
-        .itemInputs('#forge:plates/gold')
-        .notConsumable('ae2:logic_processor_press')
-        .itemOutputs('ae2:printed_logic_processor')
-        .EUt(120)
-        .duration(200)
-    event.recipes.gtceu.laser_engraver('gtceu:calculation_processor_print')
-        .itemInputs('#forge:plates/certus_quartz')
-        .notConsumable('ae2:calculation_processor_press')
-        .itemOutputs('ae2:printed_calculation_processor')
-        .EUt(120)
-        .duration(200)
-    event.recipes.gtceu.laser_engraver('gtceu:engineering_processor_print')
-        .itemInputs('#forge:plates/diamond')
-        .notConsumable('ae2:engineering_processor_press')
-        .itemOutputs('ae2:printed_engineering_processor')
-        .EUt(120)
-        .duration(200)
-    event.recipes.gtceu.laser_engraver('gtceu:silicon_print')
-        .itemInputs('#forge:plates/silicon')
-        .notConsumable('ae2:silicon_press')
-        .itemOutputs('ae2:printed_silicon')
-        .EUt(120)
-        .duration(200)
-    event.recipes.gtceu.circuit_assembler('gtceu:logic_processor_tin')
-        .itemInputs('ae2:printed_logic_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:tin', 288))
-        .itemOutputs('ae2:logic_processor')
-        .EUt(120)
-        .duration(240)
-    event.recipes.gtceu.circuit_assembler('gtceu:logic_processor_soldering_alloy')
-        .itemInputs('ae2:printed_logic_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('ae2:logic_processor')
-        .EUt(120)
-        .duration(240)
-    event.recipes.gtceu.circuit_assembler('gtceu:calculation_processor_tin')
-        .itemInputs('ae2:printed_calculation_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:tin', 288))
-        .itemOutputs('ae2:calculation_processor')
-        .EUt(120)
-        .duration(240)
-    event.recipes.gtceu.circuit_assembler('gtceu:calculation_processor_soldering_alloy')
-        .itemInputs('ae2:printed_calculation_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('ae2:calculation_processor')
-        .EUt(120)
-        .duration(240)
-    event.recipes.gtceu.circuit_assembler('gtceu:engineering_processor_tin')
-        .itemInputs('ae2:printed_engineering_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:tin', 288))
-        .itemOutputs('ae2:engineering_processor')
-        .EUt(120)
-        .duration(240)
-    event.recipes.gtceu.circuit_assembler('gtceu:engineering_processor_soldering_alloy')
-        .itemInputs('ae2:printed_engineering_processor', 'ae2:printed_silicon', '#forge:circuits/lv')
-        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-        .itemOutputs('ae2:engineering_processor')
-        .EUt(120)
-        .duration(240)
+    function press_recipe(name, color, ingredient, circuit) {
+        event.recipes.gtceu.forming_press("gtceu:" + name + "_press")
+            .itemInputs("progregss:unavailable_" + name + "_press",
+                "8x twilightforest:" + color + "_castle_rune_brick")
+            .itemOutputs("ae2:" + name + "_press")
+            .EUt(120)
+            .duration(1600);
+        event.recipes.gtceu.laser_engraver("gtceu:" + name + "_print")
+            .itemInputs("#forge:plates/" + ingredient)
+            .notConsumable("ae2:" + name + "_press")
+            .itemOutputs("ae2:printed_" + name)
+            .EUt(120)
+            .duration(200);
+        if (circuit) {
+            event.recipes.gtceu.circuit_assembler("gtceu:" + name)
+                .itemInputs("ae2:printed_" + name, 'ae2:printed_silicon', '#forge:circuits/hv')
+                .inputFluids(Fluid.of('gtceu:tin', 288))
+                .itemOutputs("ae2:" + name)
+                .EUt(120)
+                .duration(240);
+        }
+    }
+    press_recipe("logic_processor", "yellow", "gold", true);
+    press_recipe("calculation_processor", "pink", "certus_quartz", true);
+    press_recipe("engineering_processor", "blue", "diamond", true);
+    press_recipe("silicon", "violet", "silicon", false);
 })
